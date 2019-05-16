@@ -43,7 +43,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="4dl-u1-tMS">
                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="lBu-R5-EgP"/>
-                        <barButtonItem key="rightBarButtonItem" title="Continue" id="caf-go-sv6"/>
+                        <barButtonItem key="rightBarButtonItem" title="Continue" id="caf-go-sv6">
+                            <connections>
+                                <segue destination="61u-FB-itC" kind="show" id="2pt-sK-2QX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WF9-hQ-Gmf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -58,18 +62,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="3gv-zv-BvJ">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <items>
-                                <navigationItem title="Title" id="6rV-MG-4GK">
-                                    <barButtonItem key="rightBarButtonItem" title="Continue" id="czJ-jt-e3U"/>
-                                </navigationItem>
-                            </items>
-                        </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="dhe-As-Muh" detailTextLabel="0GV-bz-due" style="IBUITableViewCellStyleSubtitle" id="0dz-yk-bs2">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0dz-yk-bs2" id="I39-aC-jkb">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
