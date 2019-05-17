@@ -1,5 +1,5 @@
 //
-//  Select.swift
+//  Laundry.swift
 //  LaundryApp
 //
 //  Created by Jonathan on 5/16/19.
@@ -8,23 +8,23 @@
 
 import Foundation
 
-struct laundry: Codable{
+struct Laundry: Codable{
     var name: String
-    var time: Double
+    var time: String
     
     static let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
     static let saveURL = documentsDirectory.appendingPathExtension("laundry_file").appendingPathExtension("plist")
     
-    static func saveToFile(participants: [laundry]) {
+    static func saveToFile(participants: [Laundry]) {
         let propertyListEncoder = PropertyListEncoder()
         let encodedName = try? propertyListEncoder.encode(participants)
         try? encodedName?.write(to: saveURL, options: .noFileProtection)
     }
     
-    static func loadFromFile() -> [laundry]? {
+    static func loadFromFile() -> [Laundry]? {
         let propertyListDecoder = PropertyListDecoder()
         if let retrievedName = try? Data(contentsOf:saveURL) {
-            if let decodeName = try? propertyListDecoder.decode(Array<laundry>?.self, from: retrievedName) {
+            if let decodeName = try? propertyListDecoder.decode(Array<Laundry>?.self, from: retrievedName) {
                 return decodeName
             }
         }

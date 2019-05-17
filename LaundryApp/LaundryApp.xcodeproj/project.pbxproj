@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB16046C228DD86D0095B52F /* Select.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16046B228DD86D0095B52F /* Select.swift */; };
+		AB16046C228DD86D0095B52F /* Laundry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16046B228DD86D0095B52F /* Laundry.swift */; };
 		AB2923FD2289A6CA007A0A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2923FC2289A6CA007A0A34 /* AppDelegate.swift */; };
 		AB2924022289A6CA007A0A34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2924002289A6CA007A0A34 /* Main.storyboard */; };
 		AB2924042289A6CB007A0A34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2924032289A6CB007A0A34 /* Assets.xcassets */; };
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AB16046B228DD86D0095B52F /* Select.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Select.swift; sourceTree = "<group>"; };
+		AB16046B228DD86D0095B52F /* Laundry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Laundry.swift; sourceTree = "<group>"; };
 		AB2923F92289A6CA007A0A34 /* LaundryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaundryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2923FC2289A6CA007A0A34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB2924012289A6CA007A0A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 				AB2923FC2289A6CA007A0A34 /* AppDelegate.swift */,
 				AB3B4801228C6D7A00B8CC14 /* FirstTableViewController.swift */,
 				AB3B4803228C6D9000B8CC14 /* FinalTableViewController.swift */,
-				AB16046B228DD86D0095B52F /* Select.swift */,
+				AB16046B228DD86D0095B52F /* Laundry.swift */,
 				AB2924002289A6CA007A0A34 /* Main.storyboard */,
 				AB2924032289A6CB007A0A34 /* Assets.xcassets */,
 				AB2924052289A6CB007A0A34 /* LaunchScreen.storyboard */,
@@ -265,7 +265,7 @@
 				AB3B4802228C6D7A00B8CC14 /* FirstTableViewController.swift in Sources */,
 				AB3B4804228C6D9000B8CC14 /* FinalTableViewController.swift in Sources */,
 				AB2923FD2289A6CA007A0A34 /* AppDelegate.swift in Sources */,
-				AB16046C228DD86D0095B52F /* Select.swift in Sources */,
+				AB16046C228DD86D0095B52F /* Laundry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
