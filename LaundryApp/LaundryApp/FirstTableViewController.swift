@@ -11,7 +11,7 @@ import UIKit
 class FirstTableViewController: UITableViewController {
     
     var participants = [Laundry(name: "Jonathan", time: "2:00 - 4:00"),
-                        Laundry(name: "John", time: "10:00 - 4;00")]
+                        Laundry(name: "John", time: "10:00 - 12: 00")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,14 +65,14 @@ class FirstTableViewController: UITableViewController {
         // Return false if you do not want the item to be re-orderable.
         return true
     }
-
+    */
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        // Pass the array to the final view controller.
+        let destinationViewController = segue.destination as! FinalTableViewController
+        destinationViewController.result = participants
     }
-    */
+ 
 
 }
