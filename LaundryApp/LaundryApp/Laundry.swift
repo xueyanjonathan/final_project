@@ -10,7 +10,12 @@ import Foundation
 
 struct Laundry: Codable{
     var name: String
-    var time: String
+    var time = ""
+    
+    init(name: String) {
+        self.name = name
+        time = randomTime()
+    }
     
     static let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
     static let saveURL = documentsDirectory.appendingPathExtension("laundry_file").appendingPathExtension("plist")
@@ -29,5 +34,19 @@ struct Laundry: Codable{
             }
         }
         return nil
+    }
+    
+    func randomTime() -> String {
+        let listOfTime = ["8:00 - 10:00",
+                          "10:00 - 12:00",
+                          "12:00 - 14:00",
+                          "14:00 - 16:00",
+                          "16:00 - 18:00",
+                          "18:00 - 20:00"]
+        //let luckyTime = listOfTime.randomElement()!
+        //let place = listOfTime.firstIndex(of: luckyTime)
+        //listOfTime.remove(at: (place)!)
+        //return luckyTime
+        return listOfTime.randomElement()!
     }
 }

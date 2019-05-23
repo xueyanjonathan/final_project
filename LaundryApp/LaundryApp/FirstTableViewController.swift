@@ -10,8 +10,8 @@ import UIKit
 
 class FirstTableViewController: UITableViewController {
     
-    var participants = [Laundry(name: "Jonathan", time: "2:00 - 4:00"),
-                        Laundry(name: "John", time: "10:00 - 12: 00")]
+    var participants = [Laundry(name: "Jonathan"),
+                        Laundry(name: "John")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
