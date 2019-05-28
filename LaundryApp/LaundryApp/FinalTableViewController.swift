@@ -4,7 +4,7 @@
 //
 //  Created by Jonathan on 5/15/19.
 //  Copyright © 2019 Jonathan. All rights reserved.
-//
+//  This file make the app show the result participants get, specifically the time they each get.
 
 import UIKit
 
